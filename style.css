@@ -109,7 +109,7 @@ header{
 	right: 0px;
 	left: 0px;
 	text-align: center;
-	z-index: 2;
+	z-index: 1090;
 }
 .menu-cabecera{
 	overflow: hidden;
@@ -206,6 +206,42 @@ header{
 	height: 3em;
 	background: #f6f7f8;
 	border-top:#e5e6e9 1px solid;
+}
+.contenedorImgPerfil{
+	width: 15%;
+	margin: 0;
+	display: inline-block;
+}
+
+/*---------------------Perfil----------------------------*/
+.perfilC{
+	background: red;
+	width: 75%;
+	height: 100%;
+	left: 4%;
+	position: relative;
+	padding: 2.9em 0em 0em 0em;
+	overflow: hidden;
+	display: none;
+}
+.imgPer{
+	position: absolute;
+	z-index: 1089;
+	border-radius: 100%;
+	width: 100px;
+	height: 100px;
+	margin: 10px 10px;
+	border: 5px solid rgba(0,0,0,0.4);
+}
+.slider{
+	width: 100%;
+	height: 400px;
+	background: green;
+	background-size: 100% 100%;
+	background-position: center;
+}
+.imagenD{
+	width: 100%;
 }
 /*******************Datos derecha************************/
 .datosLaterales{
