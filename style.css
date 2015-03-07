@@ -153,14 +153,21 @@ header{
 }
 .menuLateral-item{
 	font-size: 1.2em;
-	padding-top: 1.3em;
 	color: white;
+	background: black;
+	border-bottom: 1px solid white;
+}
+.menuLateral-item:hover{
+	color: yellow;
 }
 .menuLateral-item:first-child{
-	padding-top: 1em;
+	padding: .5em;
 }
 .link-item{
 	text-decoration: none;
+}
+.link-item:focus{
+	outline: none !important;
 }
 /***************************Inicio***********************/
 .cuerpo{
@@ -222,7 +229,6 @@ header{
 	position: relative;
 	padding: 2.9em 0em 0em 0em;
 	overflow: hidden;
-	display: none;
 }
 .imgPer{
 	position: absolute;
