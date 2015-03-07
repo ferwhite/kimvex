@@ -1,0 +1,30 @@
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<a href="#div1" class='MO'>loquesea 1</a>
+<a href="#div2" class='MO'>loquesea 2</a>
+<a href="#div3" class='MO'>loquesea 3</a>
+<a href="#div4" class='MO'>loquesea 4</a>
+<a href="#div5" class='MO'>loquesea 5</a>
+ 
+<div id="div1" class="oculto">Contenido 1</div>
+<div id="div2" class="oculto">Contenido 2</div>
+<div id="div3" class="oculto">Contenido 3</div>
+<div id="div4" class="oculto">Contenido 4</div>
+<div id="div5" class="oculto">Contenido 5</div>
+
+<script type="text/javascript">
+	jQuery(document).ready(function(){ 
+    $(".oculto").hide();              
+    $(".MO").click(function(){
+          var nodo = $(this).attr("href");  
+ 
+          if ($(nodo).is(":visible")){
+               $(nodo).hide();
+               return false;
+          }else{
+        $(".oculto").hide();                             
+        $(nodo).fadeToggle( "slow" );
+        return false;
+          }
+    });
+}); 
+</script>

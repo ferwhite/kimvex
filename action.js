@@ -1,46 +1,19 @@
-var $perfil = $('#perfil'),
-	$inicio = $('#inicio'),
-	$global = $('#global'),
-	$mensaje= $('#mensaje'),
-	$amigos = $('#amigos'),
-	$fotos	= $('#fotos'),
-	$videos = $('#videos'),
-	$grupos = $('#grupos'),
-	$tImage	= $('#topImagenes'),
-	$portafolio = $('#portafolio'),
-	$seguridad = $('#seguridad'),
-	$config	= $('#configuracion'),
-	$cerrar	= $('#cerra'),
-	$perfilCuerpo = $('#perfilCuerpo'),
-	$inicioCuerpo = $('#inicioCuerpo');
-
+$(".cuerpo").hide();
+$("#inicioCuerpo").fadeToggle( "slow" );
 function mostrarPerfil(g){
-	g.preventDefault();
-	g.stopPropagation();
-
-	$perfilCuerpo.slideToggle();
-	$inicioCuerpo.slideToggle();
-	console.log(g);
+    var nodo = $(this).attr("href");  
+ 
+    if($(nodo).is(":visible")){
+	    $(nodo).hide();
+        $("#inicioCuerpo").fadeToggle( "slow" );
+        return false;
+    }else{
+       $(".cuerpo").hide();                             
+       $(nodo).slideToggle();
+       return false;
+    }
 }
-/*$(document).ready(function(){
-	var contenedor = $('#slider');
-	var tiempo = 7000;
-
-	contenedor.css({'background-image':'url(background-image.jpg)'});
-
-	function imagen() {
-		setTimeout(function(){contenedor.fadeTo('slow',0.8, function(){ $(this).css({'background-image':'url(django.png)'}); imagen3();}).fadeTo('slow', 1);}, tiempo);
-	}
-	function imagen2() {
-		setTimeout(function(){contenedor.fadeTo('slow',0.8, function(){ $(this).css({'background-image':'url(2-1920x.jpg)'}); imagen();}).fadeTo('slow', 1);}, tiempo);
-	}
-	function imagen3() {
-		setTimeout(function(){contenedor.fadeTo('slow',0.8, function(){ $(this).css({'background-image':'url(background-image.jpg)'}); imagen();}).fadeTo('slow', 1);}, tiempo);
-	}
-	imagen2();
-	 });
-*/
-$perfil.click(mostrarPerfil);
-	$(function(){
-		$('.pix_diapo').diapo();
-	});
+$(".link-item").click(mostrarPerfil);
+$(function(){
+	$('.pix_diapo').diapo();
+});
