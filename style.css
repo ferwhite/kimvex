@@ -4,6 +4,7 @@ body{
 }
 
 /**********************Fuentes**************************/
+@import url(http://fonts.googleapis.com/css?family=Spicy+Rice);
 @font-face {
 	font-family: 'icomoon';
 	src:url('fonts/icomoon.eot?-1at1is');
@@ -135,6 +136,10 @@ header{
 	background: white;
 	border:0;
 	padding: .3em;
+}
+.opcionesMenuCabe{
+	font-family: 'Spicy Rice', cursive;
+	font-weight: bold;
 }
 /*************************Cuerpo***********************/
 .menuLateral{

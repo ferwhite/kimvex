@@ -1,0 +1,58 @@
+<style>body{padding: 0px; margin: 0px;}
+div{ margin: 0px; padding: 0px;}
+.header{ height: 70px; padding-top: 10px;}
+.content{ height: 500px;}
+.footer{ height: 40px;}
+
+ul.main_menu > li{ float: left; padding: 5 10 5 25; margin: 3px; }
+.noti-box{position: absolute; z-index: 1000; padding: 20px; margin-top: 15px;}
+.noti-box > li{padding: 6; padding-right: 25;}
+
+.header, .footer { background: #0A7CC3;}
+ul.main_menu > li{ border: solid 1px #F0EDED; border-radius: 5px;
+                 background: -moz-linear-gradient(top, #bf3b57 0%, #190512 99%); /* FF3.6+ */
+                 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bf3b57), color-stop(99%,#190512));}
+.noti-box{background: yellow; border-radius: 6px;}
+.noti-box > li{background: white; border-bottom: dotted black 1px;}
+</style>
+
+<html>
+<head>
+<LINK href="style.css" rel="stylesheet" type="text/css">
+<LINK href="font.css" rel="stylesheet" type="text/css">
+<LINK href="dim.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js" ></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    notis = $("#notis");
+    noti_box = $("#notibox");
+    noti_box.hide();
+    notis.click(function(){
+        noti_box.fadeToggle()
+    });
+});
+</script>
+</head>
+<body>
+<div class="header">
+    <ul class="main_menu">
+        <li id="notis"> 
+        notificaciones
+        <ul class="noti-box" id="notibox">
+            <li>se ha comentado un post</li>
+            <li>se chingolito te esta siguiendo</li>
+            <li>una vaca comio pasto</li>
+        </ul>
+        </li>
+        <li> mensajes</li>
+        <li> smokeweed</li>
+    <ul>
+</div>
+<div class="content">
+contentido del sitio
+</div>
+<div>
+<div class="footer">
+</div>
+</body>
+</html>
