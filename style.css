@@ -104,13 +104,14 @@ body{
 /**********************Cabecera*************************/
 header{
 	overflow: hidden;
-	background: #2c4762;
+	background: #009688;
 	color: white;
 	position: fixed;
 	right: 0px;
 	left: 0px;
 	text-align: center;
 	z-index: 1090;
+	top: 0;
 }
 .menu-cabecera{
 	overflow: hidden;
@@ -142,10 +143,13 @@ header{
 	font-weight: bold;
 }
 /*************************Cuerpo***********************/
+.Cuerpo{
+	margin-top:3.1rem;
+}
 .menuLateral{
 	height: 94%;
 	width: 4%;
-	background: #2c4762;
+	background: #009688;
 	position: fixed;
 	top: 2.7em;
 	text-align: center;
@@ -181,8 +185,10 @@ header{
 	height: 100%;
 	left: 4%;
 	position: relative;
-	padding: 3em 0em 0em 0em;
+	padding: 0;
 	overflow: hidden;
+	margin: 0;
+	display: inline-block;
 }
 .articuloCuerpo{
 	position: relative;
@@ -211,7 +217,7 @@ header{
 	display: inline-block;
 	position: absolute;
 	margin-top: 2em;
-	color: #2c4762;
+	color: #009688;
 }
 .seccionOpcionesP{
 	width: 100%;
@@ -232,8 +238,8 @@ header{
 	height: 100%;
 	left: 4%;
 	position: relative;
-	padding: 2.9em 0em 0em 0em;
 	overflow: hidden;
+	top: 0;
 }
 .imgPer{
 	position: absolute;
@@ -257,9 +263,42 @@ header{
 /*******************Datos derecha************************/
 .datosLaterales{
 	position: fixed;
-	top: 2.7em;
-	background: #2c4762;
+	top: 3.1em;
+	background: #009688;
 	width: 21%;
 	height: 94%;
 	right: 0;
+	overflow: hidden;
+}
+.notificaciones{
+	width: 100%;
+	background: white;
+}
+.notiLista{
+	list-style: none;
+	text-align: center;
+	margin: 0;
+}
+.notiICo{
+	display: inline-block;
+	font-size: 1.4em;
+	padding: .6em 2em .6em 0em;
+	cursor: pointer;
+}
+.notiICo:hover{
+	color: yellow;
+}
+.notifiDatos{
+	margin-top: 1em;
+	width: 100%;
+	height: 170px;
+	background: white;
+	border-bottom: 1px solid;
+}
+.chat{
+	margin-top: 1em;
+	border-radius: 12px;
+	width: 100%;
+	height: 300px;
+	background: white;
 }

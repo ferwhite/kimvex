@@ -13,7 +13,22 @@ function mostrarPerfil(g){
        return false;
     }
 }
+$(".notifiDatos").hide();   
+function mostrarNoti(){
+	var muestra = $(this).attr('xx');
+	console.log(muestra);
+	if($(muestra).is(":visible")){
+	    $(muestra).hide();
+        return false;
+    }else{
+       $(".notifiDatos").hide();                             
+       $(muestra).slideToggle();
+       return false;
+    }
+}
+
 $(".link-item").click(mostrarPerfil);
+$(".notiICo").click(mostrarNoti);
 $(function(){
 	$('.pix_diapo').diapo();
 });
